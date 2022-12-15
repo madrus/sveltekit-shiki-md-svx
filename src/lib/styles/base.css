@@ -1,0 +1,58 @@
+/* default light theme */
+:root {
+	--color-primary: theme('colors.light.background');
+	--color-secondary: theme('colors.light.foreground');
+	--color-link: theme('colors.light.link');
+	--color-link-hover: theme('colors.light.linkHover');
+}
+
+:root html {
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+:root body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+/* dark theme */
+[data-theme='dark'],
+.dark-mode {
+	--color-primary: theme('colors.dark.background');
+	--color-secondary: theme('colors.dark.foreground');
+	--color-link: theme('colors.dark.link');
+	--color-link-hover: theme('colors.dark.linkHover');
+}
+
+.main-colors {
+	@apply text-secondary  dark:text-primary  bg-primary  dark:bg-secondary;
+}
+
+.main-hover-colors {
+	@apply hover:text-primary  dark:hover:text-secondary  hover:bg-secondary  dark:hover:bg-primary;
+}
+
+.inverted-colors {
+	@apply text-primary  dark:text-secondary  bg-secondary  dark:bg-primary;
+}
+
+.inverted-hover-colors {
+	@apply hover:text-secondary  dark:hover:text-primary  hover:bg-primary  dark:hover:bg-secondary;
+}
+
+.logo-hover-styles {
+	@apply hover:text-link dark:hover:text-link;
+}
+
+.animation {
+	@apply transition  transform-gpu  ease-out  duration-500;
+}
+
+.no-blinking-caret {
+	@apply caret-transparent;
+}
+
+.icon-styles {
+	@apply text-link hover:text-secondary dark:hover:text-primary cursor-pointer border-none focus:outline-none;
+}
