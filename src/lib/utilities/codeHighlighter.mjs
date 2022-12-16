@@ -55,22 +55,17 @@ const rangeParser = (rangeString) => {
  * @returns {Promise<string>} - highlighted html
  */
 const highlighter = async (code, lang, meta) => {
-	console.log(lang, meta)
-
 	const shikiHighlighter = await getHighlighter({
 		theme: THEME
 	});
-
 	let html;
 	if (!meta) {
 		html = shikiHighlighter.codeToHtml(code, {
 			lang
 		});
 	} else {
-		console.log(/{([\d,-]+)}/.exec(meta))
 		const highlightMeta = /{([\d,-]+)}/.exec(meta)[1];
 		const highlightLines = rangeParser(highlightMeta);
-
 		html = shikiHighlighter.codeToHtml(code, {
 			lang,
 			lineOptions: highlightLines.map((element) => ({

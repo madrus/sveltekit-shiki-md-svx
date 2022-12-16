@@ -5,8 +5,6 @@
 
 <Head/>
 
-
-
 <main>
 	<slot />
 </main>
