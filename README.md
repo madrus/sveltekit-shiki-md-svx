@@ -1,4 +1,11 @@
-# create-svelte
+# Svelte, Shiki, Markdown and MDSveX
+
+Most of the information is taken from two articles:
+
+1. [Rodney Lab - SvelteKit Shiki Syntax Highlighting: Markdown Codeblocks](https://rodneylab.com/sveltekit-shiki-syntax-highlighting/)
+2. [SvelteKit Breaking Changes](https://joshcollinsworth.com/blog/sveltekit-breaking-changes)
+
+## Intro
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
