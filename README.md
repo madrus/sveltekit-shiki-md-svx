@@ -1,4 +1,4 @@
-# Svelte, Shiki, Markdown and MDSveX
+# SvelteKit, Shiki, Markdown and MDSveX
 
 Most of the information is taken from two articles:
 

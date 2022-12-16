@@ -1,7 +1,8 @@
 {
-	"name": "svelte-shiki-md-svx",
+	"name": "sveltekit-shiki-md-svx",
 	"version": "0.1.0",
 	"private": false,
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"start": "vite --port 4000",
