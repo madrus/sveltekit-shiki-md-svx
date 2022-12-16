@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const colors = require('./src/lib/styles/colors.cjs')
+const colors = require('./src/lib/styles/tw/colors.cjs')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

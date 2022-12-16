@@ -1,0 +1,13 @@
+# Highlight
+
+## Rust
+
+```rust
+println!("Made it here!");
+```
+
+## JavaScript
+
+```js
+console.log('Made it here!');
+```
